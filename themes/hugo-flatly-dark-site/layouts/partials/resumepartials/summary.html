@@ -1,0 +1,10 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section class="uk-block uk-block-secondary" id="about">
+    <div class="uk-grid">
+            <div class="uk-width-4-5 uk-text-center uk-container-center">
+                <h2 class="section-heading">{{ with .Site.Params.summary.headline }}{{ . }}{{ end }}</h2>
+                <hr>
+                <p class="">{{ with .Site.Params.summary.description }}{{ . | markdownify }}{{ end }}</p>
+            </div>
+    </div>
+</section>

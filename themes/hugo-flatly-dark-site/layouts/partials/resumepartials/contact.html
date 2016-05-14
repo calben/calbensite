@@ -1,0 +1,18 @@
+<section id="contact" class="uk-block uk-block">
+    <div class="uk-grid">
+            <div class="uk-width-3-5 uk-text-center uk-container-center">
+                <h2 class="section-heading">{{ with .Site.Params.contact.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+                <p>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</p>
+            </div>
+    </div>
+    <div class="uk-grid">
+            <div class="uk-width-1-4"></div>
+            <div class="uk-width-1-4 uk-text-center">
+                <p>{{ with .Site.Params.contact.phone }}{{ . }}{{ end }}</p>
+            </div>
+            <div class="uk-width-1-4 uk-text-center">
+                <p>{{ with .Site.Params.contact.email }}{{ . }}{{ end }}</p>
+            </div>
+    </div>
+</section>

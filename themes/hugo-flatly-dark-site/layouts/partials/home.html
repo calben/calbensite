@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "mainpartials/head.html" . }}
+    </head>
+    <body id="page-top">
+        {{ partial "mainpartials/nav.html" . }}
+
+        {{ partial "mainpartials/js.html" . }}
+    </body>
+</html>

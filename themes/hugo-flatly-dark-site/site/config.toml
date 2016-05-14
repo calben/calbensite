@@ -1,0 +1,90 @@
+baseurl = "http://calben.github.io/hugo-flatly-dark-resume-theme"
+languageCode = "en-us"
+title = "your name"
+theme = "../../"
+
+[params]
+	name = "your name"
+	description = "your resume's description"
+	favicon = "favicon.ico"
+
+	[params.navigation]
+		brand = "YOUR NAME"
+
+		[params.navigation.links]
+			about = "SUMMARY"
+			experience	=	"EXPERIENCE"
+			projects = "PROJECTS"
+			skills = "SKILLS"
+			education = "EDUCATION"
+			contact = "CONTACT"
+
+	[params.summary]
+		headline    = "SUMMARY"
+		description = "Donec convallis varius mollis. Cras condimentum, lectus sit amet imperdiet eleifend, elit sem euismod massa, sed feugiat turpis diam ut urna. Cras et nulla lectus. Etiam accumsan sapien aliquam arcu pharetra cursus. Mauris hendrerit eros nec porttitor feugiat. Duis quis ante enim. Nulla facilisi. Donec commodo turpis turpis, eu rhoncus leo pulvinar id. Sed tincidunt, erat nec fermentum rhoncus, quam turpis tempus nulla, sed accumsan libero lorem ut lectus. Pellentesque vehicula mollis neque quis facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse auctor tristique tortor, sit amet bibendum augue aliquam et. Suspendisse feugiat finibus risus, a finibus dolor. Aliquam vestibulum augue ac sem ullamcorper tristique eget quis mi."
+
+  [params.experience]
+    headline = "EXPERIENCE"
+
+		[[params.experience.grid]]
+
+		sectiontitle = "AN OPTIONAL SECTION"
+
+		[[params.experience.grid.item]]
+		title = "My Most Recent Job!"
+		description = "Yup, it was pretty cool"
+		date = "2016"
+
+		[[params.experience.grid.item]]
+		title = "Some other job"
+		description = "This one was ok, I guess..."
+		date = "2016"
+
+		[[params.experience.grid.item]]
+		title = "My Most Recent Job!"
+		description = "Yup, it was pretty cool"
+
+		[[params.experience.grid.item]]
+		title = "Some other job"
+		description = "This one was ok, I guess..."
+
+
+	[params.projects]
+		headline = "PROJECTS"
+		buttonText  = ""
+
+		[[params.projects.grid]]
+
+		sectiontitle = "subsections here too?!  why would you do such a thing?!"
+
+		[[params.projects.grid.item]]
+		title = "Awesome Project Number 1!"
+		description = "short description, click me!"
+
+		[[params.projects.grid.item]]
+		title = "Awesome Project 2"
+		description = "also clickable"
+
+	[params.skills]
+
+		headline = "SKILLS"
+
+		[[params.skills.item]]
+		name = "Some Skill Name"
+		[[params.skills.item]]
+		name = "Another Skill Name"
+		[[params.skills.item]]
+		name = "Yet Another Skill Name"
+		[[params.skills.item]]
+		name = "This is a seriously skilled man"
+
+	[params.education]
+
+	  headline = "EDUCATION"
+		description = "Keep this one pretty short and sweet, you know?  You could make fancy columns but often just a bit of text seems to be appreciated here."
+
+	[params.contact]
+		headline = "CONTACT ME"
+		description = "care to chat?  my number and email below.  sorry that they're slightly obfuscated- it's an easy way to throw off crawlers that otherwise would spam me."
+		phone = "438 + 881 + 9189"
+		email = "calem.j.bendell @ gmail com"

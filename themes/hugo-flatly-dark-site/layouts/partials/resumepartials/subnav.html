@@ -1,0 +1,30 @@
+<div>
+<nav class="uk-subnav">
+  <div class="uk-navbar-content">
+    <ul class="uk-navbar-nav uk-hidden-small">
+      <li>
+          <a href="#">TOP</a>
+      </li>
+      <li>
+          <a href="#about" data-uk-smooth-scroll>{{ with .Site.Params.navigation.links.about }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+          <a href="#experience" data-uk-smooth-scroll>{{ with .Site.Params.navigation.links.experience }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+          <a href="#projects" data-uk-smooth-scroll>{{ with .Site.Params.navigation.links.projects }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+          <a href="#skills" data-uk-smooth-scroll>{{ with .Site.Params.navigation.links.skills }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+          <a href="#education" data-uk-smooth-scroll>{{ with .Site.Params.navigation.links.education }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+          <a href="#contact" data-uk-smooth-scroll>{{ with .Site.Params.navigation.links.contact }}{{ . }}{{ end }}</a>
+      </li>
+    </ul>
+    <a href="#side-menu" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+  </div>
+</nav>
+</div>

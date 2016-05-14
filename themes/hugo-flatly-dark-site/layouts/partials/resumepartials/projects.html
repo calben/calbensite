@@ -1,0 +1,29 @@
+<section id="projects" class="uk-block uk-block-secondary">
+    <div class="uk-grid">
+            <div class="uk-width-4-5 uk-text-center uk-container-center">
+                <h2 class="section-heading">{{ with .Site.Params.projects.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+            </div>
+    </div>
+    {{ range .Site.Params.projects.grid }}
+    <div class="uk-grid">
+      <div class="uk-width-4-5 uk-container-center uk-text-center">
+        <h2>{{ .sectiontitle }}</h2>
+        <div class="uk-grid">
+      {{ range .item }}
+      <div class="uk-width-1-2 uk-text-center uk-container-center uk-block">
+        <div class="uk-vertical-align uk-panel-box" style="height: 175px;">
+          <div class="uk-vertical-align-bottom">
+              <h2>{{ .title }}</h2>
+              <h4>{{ .date }}</h4>
+              <p>{{ .description }}</p>
+              <div class="uk-button uk-button-primary">GOTO</div>
+          </div>
+      </div>
+      </div>
+      {{ end }}
+    </div>
+    </div>
+    </div>
+    {{ end }}
+</section>

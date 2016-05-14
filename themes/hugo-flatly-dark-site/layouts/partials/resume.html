@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "mainpartials/head.html" . }}
+    </head>
+    <body id="page-top">
+        {{ partial "mainpartials/nav.html" . }}
+
+        {{ partial "resumepartials/subnav.html" . }}
+
+        {{ partial "resumepartials/summary.html" . }}
+        {{ partial "resumepartials/experience.html" . }}
+        {{ partial "resumepartials/projects.html" . }}
+        {{ partial "resumepartials/skills.html" . }}
+        {{ partial "resumepartials/education.html" . }}
+        {{ partial "resumepartials/contact.html" . }}
+
+        {{ partial "mainpartials/js.html" . }}
+    </body>
+</html>

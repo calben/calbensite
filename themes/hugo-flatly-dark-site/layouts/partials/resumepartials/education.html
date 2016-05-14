@@ -1,0 +1,8 @@
+<section id="projects" class="uk-block uk-block-secondary">
+    <div class="uk-grid">
+            <div class="uk-width-4-5 uk-text-center uk-container-center">
+                <h2 class="section-heading">{{ with .Site.Params.education.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+                <p class="">{{ with .Site.Params.education.description }}{{ . | markdownify }}{{ end }}</p>
+            </div>
+</section>

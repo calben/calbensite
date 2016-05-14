@@ -1,0 +1,19 @@
+<section id="projects" class="uk-block">
+    <div class="uk-grid">
+            <div class="uk-width-4-5 uk-text-center uk-container-center">
+                <h2 class="section-heading">{{ with .Site.Params.skills.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+            </div>
+    </div>
+    <div class="uk-grid">
+      <div class="uk-width-3-5 uk-container-center uk-text-center">
+        <div class="uk-grid">
+      {{ range .Site.Params.skills.item }}
+      <div class="uk-width-1-2 uk-text-center uk-container-center">
+              <h3>{{ .name }}</h3>
+      </div>
+      {{ end }}
+    </div>
+    </div>
+    </div>
+</section>
