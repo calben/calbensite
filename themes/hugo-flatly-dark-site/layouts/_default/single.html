@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+  {{ partial "mainpartials/head.html" . }}
+</head>
+<body id="page-top">
+  {{ partial "mainpartials/nav.html" . }}
+
+  <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+    <div class="uk-grid" data-uk-grid-margin>
+      <div>
+
+        <article class="uk-article">
+
+          <h1 class="uk-article-title">{{ .Title }}</h1>
+
+          {{ if isset .Params "subtitle" }}
+            <p class="uk-article-lead"> {{ .Params.subtitle }} </p>
+          {{ end }}
+
+          {{ if isset .Params "date" }}
+            <p class="uk-article-meta"> {{ .Params.date }} <p>
+          {{ end }}
+
+            {{ .Content }}
+          </article>
+        </div>
+      </div>
+    </div>
+
+    {{ partial "mainpartials/js.html" . }}
+
+  </body>
+  </html>

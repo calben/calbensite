@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+  {{ partial "mainpartials/head.html" . }}
+</head>
+<body id="page-top">
+  {{ partial "mainpartials/nav.html" . }}
+
+  <div class="uk-margin-large-top uk-margin-large-bottom">
+
+    <div class="uk-grid" data-uk-grid-margin>
+      <div class="uk-width-1-1 uk-text-center">
+        <h1 class="uk-heading-large">{{ .Title }}</h1>
+        <div class="uk-text-large"> {{ .Content }} </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+
+  {{ partial "mainpartials/js.html" . }}
+
+</body>
+</html>

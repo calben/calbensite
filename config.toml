@@ -5,7 +5,7 @@ theme = "hugo-flatly-dark-site"
 
 [params]
 	name = "calben"
-	description = "your resume's description"
+	description = "website for calem bendell."
 	favicon = "favicon.ico"
 
 	[params.navigation]
