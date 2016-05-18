@@ -1,10 +1,8 @@
 ---
 title: About me
 subtitle: I do programming and other stuff
-type: about
-layout: about
-contactname: Calem Bendell
-contactcontent: Hello World
+type: page
+layout: resume
 ---
 
 This is the about me section! :-)
