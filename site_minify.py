@@ -14,5 +14,5 @@ for path, subdirs, files in os.walk("."):
         if type_flag:
             print("Zipping " + resolved)
             with open(resolved, 'rb') as f_in:
-                with gzip.open(resolved + ".gz", 'wb') as f_out:
+                with gzip.open(resolved + ".gz", 'wb', compresslevel=3) as f_out:
                     shutil.copyfileobj(f_in, f_out)
