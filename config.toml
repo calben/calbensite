@@ -1,4 +1,4 @@
-baseurl = "http://calben.github.io/"
+baseurl = "http://calben.xyz/"
 languageCode = "en-us"
 title = "calben"
 theme = "hugo-flatly-dark-site"

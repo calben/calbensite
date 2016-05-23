@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+  {{ partial "mainpartials/head.html" . }}
+</head>
+
+<body id="page-top">
+  {{ partial "mainpartials/nav.html" . }}
+
+  <div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+   <h1 id="title">{{ .Title }}</h1>
+        <ul id="list">
+            {{ range .Data.Pages }}
+                {{ .Render "li"}}
+            {{ end }}
+        </ul>
+  </div>
+
+{{ partial "mainpartials/js.html" . }}
+
+</body>
+</html>
