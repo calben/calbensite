@@ -9,9 +9,10 @@ for path, subdirs, files in os.walk("."):
         resolved = os.path.join(path, name)
         type_flag = False
         for filetype in supported_filetypes:
-            if resolved.endswith(filetype):
+            if resolved.endswith(filetype) and "static" in resolved:
                 type_flag = True
         if type_flag:
+            print("Zipping " + resolved)
             with open(resolved, 'rb') as f_in:
                 with gzip.open(resolved + ".gz", 'wb') as f_out:
                     shutil.copyfileobj(f_in, f_out)
