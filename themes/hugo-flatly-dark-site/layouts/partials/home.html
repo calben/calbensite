@@ -20,46 +20,49 @@
       <div class="uk-width-medium-1-2">
         <h1>Teaching Materials</h1>
         <p>Currently all teaching materials are related to the McGill Computer Scientist Summer Camp, for which I lead the games stream.</p>
-        <a class="uk-button uk-button-primary" href="{{ .Site.BaseURL }}/post/mcgillgamedevelopercampday1/">McGill Computer Scientist Summer Camp Page</a>
+        <a class="uk-button uk-button-primary" href="{{ .Site.BaseURL }}/post/mcgillgamedevelopercampday1/">McGill Computer Scientist Camp</a>
 
         <p>As I get the opportunity, I hope to upload various materials that I have used to help teach various courses at McGill, including introduction to programming, computer systems, algorithms 1, and algorithms 2.
+        </div>
+
       </div>
 
-    </div>
+      <hr class="uk-grid-divider">
 
-    <hr class="uk-grid-divider">
-
-    <div class="uk-grid" data-uk-grid-margin>
-      <div class="uk-width-medium-1-2">
-        <h1>Projects</h1>
-        <p>I'm working on an Unreal Engine 4 game right now!  Progress will be shared in blog posts (when I get to it) and in updates to the project page.  If you're interested in participating, send me an email.</p>
-        <h2>Research</h2>
-        <p>My current research projects are in neuroscience.  One of them is the simulation of the growth of neurons, called NeuroDev.
-        </p>
-        <a class="uk-button uk-button-primary" href="{{ .Site.BaseURL }}/project/neurodev">NeuroDev Page</a>
+      <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-2">
+          <h1>Projects</h1>
+          <p>I'm working on an Unreal Engine 4 game right now!  Progress will be shared in blog posts (when I get to it) and in updates to the project page.  If you're interested in participating, send me an email.</p>
+          <h2>Research</h2>
+          <p>My current research projects are in neuroscience.  One of them is the simulation of the growth of neurons, called NeuroDev.
+          </p>
+          <a class="uk-button uk-button-primary" href="{{ .Site.BaseURL }}/project/neurodev">NeuroDev Page</a>
 
           <p>
-          The other is a toolkit for analysing the similarities between neuronal signals, attempting to predict cognitive performance from interneuronal correlations.  It's called Behaviorist, but I'm still hoping to think of a better name.</p>
-        <a class="uk-button uk-button-primary" href="{{ .Site.BaseURL }}/project/behaviorist">Behaviorist Page</a>
-      </div>
+            The other is a toolkit for analysing the similarities between neuronal signals, attempting to predict cognitive performance from interneuronal correlations.  It's called Behaviorist, but I'm still hoping to think of a better name.</p>
+            <a class="uk-button uk-button-primary" href="{{ .Site.BaseURL }}/project/behaviorist">Behaviorist Page</a>
+          </div>
 
-      <div class="uk-width-medium-1-2 uk-text-center">
-        <img src="img/neurodev.png" alt="">
-      </div>
-    </div>
-
-    <hr class="uk-grid-divider">
-
-    <div class="uk-grid" data-uk-grid-margin>
-      <div class="uk-width-medium-1-1">
-        <div class="uk-panel uk-panel-box uk-text-center">
-          <h4><strong>This site's theme is open source.</strong> Feel free to use it as a template for your Hugo website. </h4>
-          <p><a class="uk-button uk-button-primary uk-margin-left" href="#">Flatly Dark Source</a></p>
-          <p>Parts of the CSS still need a lot of work, but it's legible, won't burn out reader's eyes, and prints nicely.</p>
+          <div class="uk-width-medium-1-2 uk-text-center">
+            <img src="img/neurodev.png" alt="">
+          </div>
         </div>
-      </div>
-    </div>
 
-  {{ partial "mainpartials/js.html" . }}
-</body>
-</html>
+        <hr class="uk-grid-divider">
+
+        <div class="uk-grid" data-uk-grid-margin>
+          <div class="uk-width-medium-1-1">
+            <div class="uk-panel uk-panel-box uk-text-center">
+              <h4><strong>This site's theme is open source.</strong> Feel free to use it as a template for your Hugo website. </h4>
+              <p><a class="uk-button uk-button-primary uk-margin-left" href="#">Flatly Dark Source</a></p>
+              <p>Parts of the CSS still need a lot of work, but it's legible, won't burn out reader's eyes, and prints nicely.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    {{ partial "mainpartials/js.html" . }}
+  </body>
+  </html>

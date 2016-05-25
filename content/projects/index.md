@@ -4,4 +4,5 @@ type: page
 layout: projects
 ---
 
-A collection of the project I worked on recently.
+A very incomplete collection of the project I worked on recently.
+This part of the site, like so many others, is still under construction.

@@ -1,8 +1,8 @@
 ---
-title: About me
-subtitle: I do programming and other stuff
-type: about
-layout: about
+title: GRAPHICS
+subtitle:
+type: page
+layout: graphics
 contactname: Calem Bendell
 contactcontent: Hello World
 ---
