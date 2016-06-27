@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+  {{ partial "mainpartials/head.html" . }}
+</head>
+<body id="page-top">
+
+  <div data-uk-sticky>
+    {{ partial "mainpartials/nav.html" . }}
+  </div>
+
+  <div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+
+    <div class="uk-grid" data-uk-grid-margin>
+      <div class="uk-width-medium-1-1 uk-text-center">
+        <h1 class="uk-heading-large">{{ .Title }}</h1>
+        {{ .Content }}
+      </div>
+    </div>
+
+    <div class="uk-grid uk-grid-match" data-uk-grid-margin data-uk-grid-match>
+      {{ range .Site.Pages.ByDate.Reverse }}
+        {{ if eq .Section "post" }}
+        <div class="uk-width-medium-1-1">
+          <a class="uk-panel uk-panel-box uk-panel-hover" href="{{ .Permalink }}">
+            <h2>{{ .Title }}</h2>
+            <h3>{{ .Date.Format "2006-01-02" }}</h3>
+            <h4>{{ .Params.subtitle }}</h4>
+            <div class="uk-vertical-align">
+            <div class="uk-text-center vertical-align-middle">
+            <figure class="uk-overlay uk-overlay-hover">
+                <img src="{{ .Site.BaseURL }}/{{ .Params.img }}" width="" height="" alt="">
+                <figcaption class="uk-overlay-panel uk-overlay-slide-top"></figcaption>
+            </figure>
+          </div>
+        </div>
+          </a>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+  </div>
+
+
+  {{ partial "mainpartials/js.html" . }}
+  </body>
+  </html>

@@ -1,7 +1,7 @@
 ---
-title: THE BLOG
+title: POSTS
 type: page
-layout: blog
+layout: posts
 ---
 
 "Hold up, some bastard's nicked it."

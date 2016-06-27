@@ -4,14 +4,17 @@
   {{ partial "mainpartials/head.html" . }}
 </head>
 <body id="page-top">
-  {{ partial "mainpartials/nav.html" . }}
+
+  <div data-uk-sticky>
+    {{ partial "mainpartials/nav.html" . }}
+  </div>
 
   <div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
 
     <div class="uk-grid" data-uk-grid-margin>
-      <div class="uk-width-1-1">
 
-        <article class="uk-article">
+        <article class="uk-article uk-width-medium-1-1">
+
           <h1 class="uk-text-success uk-heading-large">{{ .Title }}</h1>
           {{ if isset .Params "subtitle" }}
             <p class="uk-article-lead"> {{ .Params.subtitle }} </p>
@@ -23,17 +26,19 @@
 
           <hr/>
 
-          {{ .TableOfContents }}
+            {{ .TableOfContents }}
 
-          <hr/>
+            <hr/>
 
-            {{ .Content }}
+              {{ .Content }}
+
           </article>
-        </div>
-      </div>
+
     </div>
 
-    {{ partial "mainpartials/js.html" . }}
+  </div>
 
-  </body>
-  </html>
+
+    {{ partial "mainpartials/js.html" . }}
+</body>
+</html>

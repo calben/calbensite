@@ -1,6 +1,7 @@
 ---
-title: McGill Game Developer Summer Camp Day 1
-date: 2016-06-01
+title: I Wanna Hold Your Hand... and Build a Twin Stick Isometric Game in Unreal Engine 4!
+subtitle: there are a lot of tutorials out there for basic c++ games in unreal engine, but this one is mine
+date: 2016-06-05
 ---
 
 # Welcome to Games Camp
